@@ -1,0 +1,20 @@
+{
+  "name": "onajite-nodejs_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index_file.js",
+    "dev": "nodemon index_file.js"
+  },
+  "keywords": [],
+  "author": "Andy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,39 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js course | <%= title %> </title>
+ </head>
+
+ <body>
+  <p>Hello <%= name %></p>
+  <h1>Welcome to my simple web page</h1>
+  <h3>A platform where you can steadily learn Nodejs development</h3>
+
+  <nav>
+   <div class="Site title">
+    <a href="/">Node Home Page</a>
+    <a href="/about">About Page</a>
+    <p>Node Website</p>
+   </div>
+  </nav>
+
+  <div class="students">
+  <h2>List of students topping Nodejs class</h2>
+
+  <ul>
+   <% if (students.length > 0 ) { %> 
+    <% students.forEach(name => { %> 
+     <li><%= name %></li>
+
+    <% }) %>
+   <% } %>
+  </ul>
+
+  <%= include('partials/footer') %>
+  
+  </div>
+ </body>
+</html>
+
+
